@@ -9,11 +9,39 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="blank">
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title></title>
+	<title>超出滑动效果</title>
 	<link rel="stylesheet" type="text/css" href="./sepe">
-
+	<style type="text/css">
+		 #container {
+            margin-top: 33px;
+            overflow-x:auto;
+            white-space: nowrap;
+            width: auto;
+            padding-bottom: 10px;
+        }
+        #container li{
+        	display: inline-block;
+            width:100px;
+            height: 100px;
+            margin-left: 15px;
+        }
+        #container img{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+	</style>
 </head>
 <body>
-
+	<div class="container">
+		<ul>
+			<li> <img src="...."></li>
+			<li> <img src="...."></li>
+			<li> <img src="...."></li>
+			<li> <img src="...."></li>
+			<li> <img src="...."></li>
+			<li> <img src="...."></li>
+		</ul>
+	</div>
 </body>
 </html>
