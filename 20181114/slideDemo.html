@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>有趣的滑动</title>
+	<style>
+		.wrap{
+   			width: 918px;
+   			height: 410px;
+   			background: #fff;
+   			/* border: 1px solid green; */
+   			margin: 200px auto;
+   			overflow: hidden;
+
+		}
+		.d1{
+			float: left;
+			background: rgb(224,237,255);
+			width:79.3%;
+			height: 100%;
+			position: relative;
+		}
+		.d1-title{
+			display: block;
+			height: 100%;
+			width: 43px;
+			background: rgb(136,187,255);
+			font-family:arial,Microsoft YaHei,'微软雅黑','宋体';	
+			float: left;
+			font-size:25px;
+			line-height:32px;	
+			text-align: center;
+			color:#fff;
+			cursor:pointer;
+			padding:30px 10px 10px 10px;
+		}
+		.d2{
+			float: left;
+			width: 6.9%;
+			height: 100%;
+			background: rgb(224,237,255);
+
+		}
+		.d3{
+			float: left;
+			width: 6.9%;
+			height: 100%;
+			background: rgb(224,237,255);
+		}
+		.d4{
+			float: left;
+			width: 6.9%;
+			height: 100%;
+			background: rgb(224,237,255);
+		}
+		.open{
+			width:79.3%;
+			animation:toopen 1s;
+		}
+		@keyframes toopen{
+			0%{width:6.9%;}
+			100% {width:79.3%;}
+		}
+		.close{
+			width: 6.9%;
+			animation:toclose 1s;
+		}
+		@keyframes toclose{
+			0% {width:79.3%;}
+			100% {width:6.9%;}
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap" class="wrap">
+		<div class="d1">
+			<span class="d1-title">水底山温泉庄园</span>
+		</div>
+		<div class="d2">
+			<span class="d1-title" style="background:rgb(164,203,255)">日月湾生态园</span>
+		</div>
+		<div class="d3">
+			<span class="d1-title" style="background: #8AA6F7;">金立湾度假村</span>
+		</div>
+		<div class="d4">
+			<span class="d1-title" style="background: #7BABEC; color: #000;">海丽高尔夫酒店</span>
+		</div>
+	</div>
+
+	<script src="./util/jquery-1.11.3.min.js"></script>
+	<script>
+		$('#wrap div').click(function(event) {
+			/* Act on the event */
+			var elmentWidth = $(this).width();
+			if(elmentWidth>150){
+				return;	
+			}else{
+			/*遍歷*/
+			$('#wrap div').each(function(index, el) {
+				if($(el).width() > 500){
+					var i = $(el).index();
+					console.log('index'+i);	
+						$(el).addClass('close');
+				}
+			})
+			$(this).removeClass('close').addClass('open').siblings().removeClass('open');
+			}
+		});
+	</script>
+</body>
+</html>
