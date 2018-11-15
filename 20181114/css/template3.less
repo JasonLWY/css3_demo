@@ -1,0 +1,304 @@
+// 模板的less -> css代码
+.template3{
+	.row-content-box{
+		// padding: 0 40px;
+			padding: 0 30px 25px 30px;
+			.content-box-inBox{	
+				height: 1000px;		
+				width: 74%;	
+				margin:0 auto;
+				background-color: rgba(255, 255, 255, 0.7);
+				 .wrap1{
+				 	width: 918px;
+		   			height: 368px;
+		   			overflow: hidden;
+				 	div{
+						float: left;
+						background: rgb(224,237,255);
+						height: 100%;
+						overflow: hidden;
+						position: relative;
+						.d1-title{
+								display: block;
+								height: 100%;
+								width: 59px;
+								background: rgb(136,187,255);
+								font-family:arial,Microsoft YaHei,'微软雅黑','宋体';	
+								float: left;
+								font-size:25px;
+								line-height:32px;	
+								text-align: center;
+								color:#fff;
+								cursor:pointer;
+								padding:30px 10px 10px 10px;
+								opacity: 1;
+								font-weight: normal;
+							}
+							  .line{
+										display: inline-block;
+										height: 100%;
+										width: 20px;
+										float: left;
+									}
+									img:nth-of-type(1){
+										margin-top: 0px;
+							   			margin-left: 6px;
+									}
+									img:nth-of-type(2){
+										margin-top: 25px;
+										margin-left: 20px;
+									}
+									p{
+										height: 90px;
+							   			padding: 15px 0 0 0;
+										line-height: 24px;
+										font-size: 14px;
+										font-family:arial,Microsoft YaHei,'微软雅黑','宋体';	
+										// display: -webkit-box;
+										// -webkit-box-orient: vertical;
+										// -webkit-line-clamp: 3;
+										// overflow: hidden;
+									}
+								}
+								.d1{
+									float: left;
+									background: rgb(224,237,255);
+									width:79.3%;
+									height: 100%;
+									position: relative;
+								}	
+								.d2{
+									float: left;
+									background: rgb(224,237,255);
+									width: 6.9%;
+									height: 100%;
+									position: relative;
+								}
+								.d3{
+									float: left;
+									background: rgb(224,237,255);
+									width: 6.9%;
+									height: 100%;
+									position: relative;
+								}
+								.d4{
+									float: left;
+									background: rgb(224,237,255);
+									width: 6.9%;
+									height: 100%;
+									position: relative;
+								}
+								.open{
+									width:79.3%;
+									animation:toopen 0.8s;
+									position: relative;
+									z-index: 555;
+									// opacity: ;
+								}
+								@keyframes toopen{
+									0%{width:6.9%;}
+									100% {width:79.3%;}
+								}
+								.close{
+									width: 6.9%;
+									animation:toclose 0.8s;
+									opacity: 1;
+									font-weight: normal;
+								}
+								@keyframes toclose{
+									0% {width:79.3%;}
+									100% {width:6.9%;}
+							}	
+				 }
+			}
+		}
+	.row-template3-tab{
+		margin-top: 20px;
+		.tab-box1{
+		}
+		.tab-box2{
+			padding: 0 111px;
+			.tabActive{
+					background: #2A73DC;
+				}
+			div{
+				height: 62px;
+				background-color: #7BABEC;
+				border-right: 1px solid #ffff;
+				line-height: 62px;
+				text-align: center;
+				font-family: arial,Microsoft YaHei,'微软雅黑','宋体';
+				color:#fff;
+				width: 14.28%;
+				&:hover{
+					background: #2A73DC;
+				}
+				span{
+						display: inline-block;
+					    width: 100%;
+					    height: 100%;
+						font-size: 19px;
+						padding-left: 15px;
+					a{	
+						display: inline-block;
+						width: 100%;
+						height: 100%;
+						color:#fff;
+						text-decoration: none;
+					}
+				}
+				@media screen and (max-width: 1570px){
+					span{
+						padding-left: 0px;
+					}
+				}	
+			}
+			@media screen and (max-width: 1203px){
+				div{
+					border-right:none;
+					border-bottom: 1px solid #fff;
+				}
+			}
+			.box2Item0{
+				position: relative;
+				.item-icon{
+					display: inline-block;
+					width: 40px;
+				    height: 62px;
+				    position: absolute;
+				    top: 5px;
+				    left: 15px;
+					background-image: url("../image/new-icon.png");
+					background-repeat: no-repeat;
+					background-size: 40px 51px
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+			.box2Item1{
+				position: relative;
+				.item-icon{
+					display: inline-block;
+					width: 40px;
+				    height: 62px;
+				    position: absolute;
+				    top: 5px;
+				    left: 15px;
+					background-image: url("../image/YP-icon.png");
+					background-repeat: no-repeat;
+					background-size: 40px 51px;
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+			.box2Item2{
+				position: relative;
+				.item-icon{
+					display: inline-block;
+					width: 40px;
+				    height: 62px;
+				    position: absolute;
+				    top: 5px;
+				    left: 15px;
+					background-image: url("../image/K-icon.png");
+					background-repeat: no-repeat;
+					background-size: 40px 51px;
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+			.box2Item3{
+				position: relative;
+				.item-icon{
+					    display: inline-block;
+					    width: 55px;
+					    height: 42px;
+					    position: absolute;
+					    top: 7px;
+					    left: 9px;
+					    background-image: url(../image/TZ-icon.png);
+					    background-repeat: no-repeat;
+					    background-size: 55px 44px;
+
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+			.box2Item4{
+				position: relative;
+				.item-icon{
+					    display: inline-block;
+					    width: 55px;
+					    height: 42px;
+					    position: absolute;
+					    top: 7px;
+					    left: 9px;
+					    background-image: url(../image/TZ-icon.png);
+					    background-repeat: no-repeat;
+					    background-size: 55px 44px;
+
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+			.box2Item5{
+				position: relative;
+				.item-icon{
+					    display: inline-block;
+					    width: 55px;
+					    height: 42px;
+					    position: absolute;
+					    top: 7px;
+					    left: 9px;
+					    background-image: url(../image/TZ-icon.png);
+					    background-repeat: no-repeat;
+					    background-size: 55px 44px;
+
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+			.box2Item6{
+				position: relative;
+				.item-icon{
+					    display: inline-block;
+					    width: 55px;
+					    height: 42px;
+					    position: absolute;
+					    top: 7px;
+					    left: 9px;
+					    background-image: url(../image/TZ-icon.png);
+					    background-repeat: no-repeat;
+					    background-size: 55px 44px;
+
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+		}
+		.tab-box3 {
+			
+		}
+	}
+}
