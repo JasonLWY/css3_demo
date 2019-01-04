@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+  <style>
+    body{
+	background-color: #235;
+}
+
+.circle {
+	--inner-radius: 2.5em;
+}
+
+.circle::before {
+	content: '';
+	position: absolute;
+	width: calc(var(--inner-radius) * 2 * 2);
+	height: calc(var(--inner-radius) * 2 * 2);
+	border: 6px solid #fff;
+	border-radius: 50%;
+	animation: pulse 2s ease-out infinite;
+}
+.circle::after {
+	animation-delay: 1s;
+}
+@keyframes pulse {
+	from {
+		transform: scale(1);
+		filter: opacity(0.9);
+	}
+
+	to {
+		transform: scale(2);
+		filter: opacity(0);
+	}
+}
+
+  </style>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="circle">
+		<img src="jliu.png" alt="">
+	</div>
+</body>
+</html>
